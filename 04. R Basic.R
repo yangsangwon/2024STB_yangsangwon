@@ -20,3 +20,6 @@ x
 print(x)
 # 여러개 벡터일 경우 cat을 사용
 cat(x,y,z)
+
+
+
