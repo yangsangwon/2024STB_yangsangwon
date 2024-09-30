@@ -27,6 +27,8 @@ table(KOTRA2024 $`type of investment`)
 colors <- c("red", "orange", "yellow", "green", "blue")
 pie(table(KOTRA2024 $`type of investment`), col=colors, main="해외진출기업의 투자형태")
 
+pie(table(KOTRA2024 $'type of investment'), col=rainbow(12), main="godhlwlscnfrldjqdml xnwkgudxo")
+
 #그래프의 색상을 추가하기 위해 팔레트 패키지 설치
 install.packages("RColorBrewer")
 library(RColorBrewer)#패키지를 라이브러리에 등록
@@ -49,3 +51,7 @@ text(x=bp, y=entry, labels=entry, pos=3)#막대그래프에 값 표시
 
 #막대그래프3 편집(가로)
 barplot(table(KOTRA2024 $Area),col=pal1, xlab = "진출대륙명", ylab = "진출기업수", xlim=c(0,7000), horiz=TRUE)
+table(KOTRA2024 $Area)#도수분포표 확인
+entry <-c(334,5843,727,444,63,819,452,2331,274,280)#entry에 값 대입
+text(x=entry, y=bp, labels=entry, pos=4)#막대그래프에 값 표시
+
